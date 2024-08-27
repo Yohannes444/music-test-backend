@@ -5,7 +5,7 @@ WORKDIR /backend
 COPY package*.json ./
 
 # Install dependencies
-RUN npm install --production
+RUN npm install --force
 
 # Copy the rest of the application files to the container
 COPY . .
