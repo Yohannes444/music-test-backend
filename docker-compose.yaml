@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000"
+    environment:
+      - PORT=4000
+      - MONGODB_URL=mongodb+srv://yohannesmulat777:pu7nRPz0rTeXGFuF@yohannes444.e23yh9p.mongodb.net/song
+    volumes:
+      - .:/backend
+      - /backend/node_modules
+    stdin_open: true
+    tty: true
