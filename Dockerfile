@@ -11,10 +11,10 @@ RUN npm install --force
 COPY . .
 
 # Expose the port that the app runs on
-EXPOSE 4000
+EXPOSE 5500
 
 # Define environment variables
-ENV PORT=4000
+ENV PORT=5500
 
 # Command to run the application
-CMD ["npm", "start"]
+CMD ["npm","run", "start"]

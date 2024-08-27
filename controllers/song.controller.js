@@ -1,4 +1,4 @@
-const Song = require('../models/Song.model');
+const Song = require('../models/song.model');
 
 
 // Create
